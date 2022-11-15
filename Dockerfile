@@ -17,7 +17,7 @@ ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v3.11.3}"
 ENV CONTAINER_LIBRARY_VERSION="${CONTAINER_LIBRARY_VERSION:-v0.1.0}"
 # renovate: datasource=pypi depName=dns-lexicon
 ENV LEXICON_VERSION="${LEXICON_VERSION:-3.11.6}"
-# renovate: datasource=pypi depName=ansible
+# renovate: datasource=github-releases depName=dehydrated-io/dehydrated
 ENV DEHYDRATED_VERSION="${DEHYDRATED_VERSION:-v0.7.0}"
 
 
@@ -41,7 +41,7 @@ RUN apk add --update --no-cache --virtual .build-deps build-base libffi-dev open
     pip install -qq --upgrade --no-cache-dir pip && \
     echo "Installing dehydrated 'v$DEHYDRATED_VERSION' ..." && \
     curl -SsfL "https://github.com/dehydrated-io/dehydrated/releases/download/${DEHYDRATED_VERSION}/dehydrated-${DEHYDRATED_VERSION##v}.tar.gz" | \
-        tar xz --strip-component=1 -C /usr/local/bin dehydrated-0.7.0/dehydrated && \
+        tar xz --strip-component=1 -C /usr/local/bin "dehydrated-${DEHYDRATED_VERSION##v}/dehydrated" && \
     echo "Installing lexicon 'v$LEXICON_VERSION' ..." && \
     pip install -qq --no-cache-dir dns-lexicon=="$LEXICON_VERSION" && \
     chown -R app:app /opt/app/dehydrated && \
