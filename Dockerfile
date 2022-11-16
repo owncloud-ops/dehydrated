@@ -30,7 +30,7 @@ RUN addgroup -g 1001 -S app && \
     adduser -S -D -H -u 1001 -h /opt/app/dehydrated -s /sbin/nologin -G app -g app app
 
 RUN apk add --update --no-cache --virtual .build-deps build-base libffi-dev openssl-dev python3-dev curl && \
-    apk add --update --no-cache bash sed gawk jq curl openssl grep diffutils coreutils && \
+    apk add --update --no-cache bash sed gawk jq curl openssl grep diffutils coreutils bind-tools && \
     curl -SsfL "https://github.com/owncloud-ops/container-library/releases/download/${CONTAINER_LIBRARY_VERSION}/container-library.tar.gz" | tar xz -C / && \
     curl -SsfL -o /usr/local/bin/gomplate "https://github.com/hairyhenderson/gomplate/releases/download/${GOMPLATE_VERSION}/gomplate_linux-amd64" && \
     chmod 755 /usr/local/bin/gomplate && \
