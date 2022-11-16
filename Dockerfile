@@ -18,7 +18,7 @@ ENV CONTAINER_LIBRARY_VERSION="${CONTAINER_LIBRARY_VERSION:-v0.1.0}"
 # renovate: datasource=pypi depName=dns-lexicon
 ENV LEXICON_VERSION="${LEXICON_VERSION:-3.11.6}"
 # renovate: datasource=github-releases depName=dehydrated-io/dehydrated
-ENV DEHYDRATED_VERSION="${DEHYDRATED_VERSION:-v0.7.0}"
+ENV DEHYDRATED_VERSION="${DEHYDRATED_VERSION:-v0.7.1}"
 
 
 ENV PY_COLORS=1 \
