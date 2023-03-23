@@ -1,4 +1,4 @@
-FROM python:3.11-alpine@sha256:1018cd9dd2028ad0699ac42479722a6282648aaf895b2618a0832ea31ed5b57b
+FROM python:3.11-alpine@sha256:506eed442161ee54460830b5a4c282f84a97046d0222c917d62bcf069446c26a
 
 LABEL maintainer="ownCloud GmbH"
 LABEL org.opencontainers.image.authors="ownCloud GmbH"
