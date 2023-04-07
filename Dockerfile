@@ -1,4 +1,4 @@
-FROM docker.io/python:3.11-alpine@sha256:5405826e878490f49877a9a533c3150c0a88649928f16fca744ef310ae450ee9
+FROM docker.io/python:3.11-alpine@sha256:507818d46649f8543e58d19a00e3a1a428bb7e87c0bf7f7d1ffe7b076cda11be
 
 LABEL maintainer="ownCloud GmbH"
 LABEL org.opencontainers.image.authors="ownCloud GmbH"
