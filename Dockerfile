@@ -16,7 +16,7 @@ ENV GOMPLATE_VERSION="${GOMPLATE_VERSION:-v3.11.7}"
 # renovate: datasource=github-releases depName=owncloud-ops/container-library
 ENV CONTAINER_LIBRARY_VERSION="${CONTAINER_LIBRARY_VERSION:-v0.1.0}"
 # renovate: datasource=pypi depName=dns-lexicon
-ENV LEXICON_VERSION="${LEXICON_VERSION:-3.17.0}"
+ENV LEXICON_VERSION="${LEXICON_VERSION:-3.18.0}"
 # renovate: datasource=github-releases depName=dehydrated-io/dehydrated
 ENV DEHYDRATED_VERSION="${DEHYDRATED_VERSION:-v0.7.1}"
 
